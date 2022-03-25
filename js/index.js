@@ -11,12 +11,6 @@ const fetchPokemon = () => {
             pokeN("Pokémon no encontrado :( ");
             pokeid("?");
             poketipo("?");
-
-            esta = document.getElementById("estadisticas");
-            esta.textContent = "No Disponible" ;
-
-            mov = document.getElementById("movimientos");
-            mov.textContent = "No Disponible" ;
            
             
         }
