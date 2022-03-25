@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PokeDex 2022</title>
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="entrada">
+      <input type="text" placeholder="Busca tu pokémon" id="pokeName" name="pokeName" autocomplete="off"/>
+      <button class="btnBuscar" onclick="fetchPokemon()">Buscar</button>
+  </div>
+      <div class="pokeDex">
+        <div class="info">
+         
+          <div class="imgPokemon">
+            <img src="./img/logo.svg" id="pokeImg" alt="Pokedex" width="150px"/>
+          </div>
+          
+          <div class="PokemonName">
+            <label  id="nombre">Pokémon</label>
+            <label id="identificador"></label>
+          </div>
+
+        </div>
+      
+        <div class="detallePokemon">
+          <div class="tipo">
+            <label id="tipo"></label>
+          </div>
+          <div id="progressBar">
+            <p class="text-gray-700" id="pokeHealth_lbl">
+                PS:
+            </p>
+            <div class="w-full bg-gray-200 h-1 ">
+                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeHealth_bar"></div>
+            </div>
+            <div>
+              <p class="text-gray-700" id="pokeAttack_lbl">
+                  ATK:
+              </p>
+              <div class="w-full bg-gray-200 h-1">
+                  <div class="bg-blue-600 h-1" style="width: 0%" id="pokeAttack_bar"></div>
+              </div>
+          </div>
+
+          <div>
+              <p class="text-gray-700" id="pokeDeffense_lbl">
+                  DEF:
+              </p>
+              <div class="w-full bg-gray-200 h-1">
+                  <div class="bg-blue-600 h-1" style="width: 0%" id="pokeDeffense_bar"></div>
+              </div>
+          </div>
+
+          <div>
+              <p class="text-gray-700" id="pokeSpecialAttack_lbl">
+                  SP.ATK:
+              </p>
+              <div class="w-full bg-gray-200 h-1">
+                  <div class="bg-blue-600 h-1" style="width: 0%" id="pokeSpecialHealth_bar"></div>
+              </div>
+          </div>
+
+          <div>
+              <p class="text-gray-700" id="pokeSpecialDeffense_lbl">
+                  SP.DEF:
+              </p>
+              <div class="w-full bg-gray-200 h-1">
+                  <div class="bg-blue-600 h-1" style="width: 0%" id="pokeSpecialDeffense_bar"></div>
+              </div>
+          </div>
+
+          <div>
+              <p class="text-gray-700" id="pokeSpeed_lbl">
+                  SPEED:
+              </p>
+              <div class="w-full bg-gray-200 h-1">
+                  <div class="bg-blue-600 h-1" style="width: 0%" id="pokeSpeed_bar"></div>
+              </div>
+          </div>
+          </div>
+
+        </div>
+       
+      </div>
+
+       
+
+      </div>
+      <section>
+        <ul>
+            <li>Un elemento</li>
+        </ul>
+  </body>
+  </html>
+  <footer>
+    <script src="./js/index.js"></script>
+  </footer>
